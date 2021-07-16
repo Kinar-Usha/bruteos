@@ -1,0 +1,7 @@
+megs: 128
+romimage: D:\OSdev\bochs\Bochs-2.6.11/BIOS-bochs-latest, address=0xfffe0000
+vgaromimage: file=D:\OSdev\bochs\Bochs-2.6.11/VGABIOS-lgpl-latest
+floppya: 1_44=\\wsl$\Ubuntu-20.04\home\kinar\osdev\build\main_floppy.img, status=inserted
+boot: floppy
+mouse: enabled=0
+display_library: sdl2, options="gui_debug"

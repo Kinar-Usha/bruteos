@@ -17,7 +17,6 @@ $(BUILD_DIR)/bootloader.bin: always
 	$(ASM) $(SRC_DIR)/bootloader/boot.asm -f bin -o $(BUILD_DIR)/bootloader.bin
 
 kernel: $(BUILD_DIR)/kernel.bin
-
 $(BUILD_DIR)/kernel.bin: always
 	$(ASM) $(SRC_DIR)/kernel/main.asm -f bin -o $(BUILD_DIR)/kernel.bin
 
