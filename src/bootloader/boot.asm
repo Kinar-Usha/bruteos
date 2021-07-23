@@ -26,7 +26,7 @@ ebr_drive_number:           db 0
                             db 0                    
 ebr_signature:              db 29h
 ebr_volume_id:              db 12h, 34h, 56h, 78h   
-ebr_volume_label:           db 'NANOBYTE OS'        
+ebr_volume_label:           db 'Brute    OS'        
 ebr_system_id:              db 'FAT12   '           
 
 
@@ -196,8 +196,8 @@ disk_reset:
     ret
 
 
-msg_hello:              db 'Hello world!', ENDL, 0
-msg_read_failed:        db 'Read from disk failed!', ENDL, 0
+msg_hello:              db 'Hello world!:)', ENDL, 0
+msg_read_failed:        db 'Read from disk failed!:(', ENDL, 0
 
 times 510-($-$$) db 0
 dw 0AA55h
